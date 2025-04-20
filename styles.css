@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    height: 65vh;
+    width:40vh;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    flex: 2 2 0;
+}
+
+.button-row {
+    display: flex;
+    gap: 0;  
+    flex: 1 1 0;
+    justify-content: space-around;
+    gap: 1vh;
+}
+
+button {
+    max-width: 10vh;
+    flex: 1 1 0;   
+    border-radius: 50%;
+    gap: 1vh;
+}
+
+.zero {
+    max-width: 20vh;
+    flex: 2 2 0;
+}

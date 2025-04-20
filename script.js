@@ -1,4 +1,6 @@
 function add(a, b) {
+
+    console.log(a+b)
     return a + b
 }
 
@@ -27,3 +29,19 @@ function operate(a, b, operator) {
         divide(a, b)
     }
 }
+
+const display = document.querySelector(".display");
+
+const numbers = document.querySelectorAll('.number');
+
+
+function addNumDisplay(a) {
+    display.append(a)
+}
+
+numbers.forEach(number => 
+    number.addEventListener("click", () => {
+        display.append(number.textContent)
+    })
+    
+)
