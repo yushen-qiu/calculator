@@ -61,7 +61,7 @@ numbers.forEach(number =>
                 a = number.textContent
                 shouldClearDisplay = false;
             } else {
-                if (a == 0 && number.textContent != 0 && !a.includes('.')) {
+                if (a == 0 && !a.includes('.')) {
                     a = number.textContent
                 } else {
                     a += number.textContent
